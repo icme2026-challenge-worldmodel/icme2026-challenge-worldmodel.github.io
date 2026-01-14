@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://qiankemeng.github.io/icme2026_challenge_worldmodel",
+  "homepage": "https://icme2026-challenge-worldmodel.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
