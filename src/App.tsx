@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Evaluation from './pages/Evaluation';
 import Data from './pages/Data';
