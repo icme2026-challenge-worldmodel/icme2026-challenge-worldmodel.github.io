@@ -8,9 +8,5 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
-
-    allowedHosts: [
-      'icmetest.kgnas.top',   // ✅ 你的域名
-    ],
   },
 })
