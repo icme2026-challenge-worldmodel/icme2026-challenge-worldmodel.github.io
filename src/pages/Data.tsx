@@ -35,6 +35,51 @@ const Data: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className="row mt-4">
+        <div className="col-md-12">
+          <div className="card">
+            <div className="card-header bg-success text-white">
+              <h5 className="mb-0">📥 Download: CrashTwin Dataset</h5>
+            </div>
+            <div className="card-body">
+              <p>
+                The CrashTwin dataset is publicly available on Hugging Face. It is distributed as a single tar archive split into 46 <code>.zst</code> compressed parts (~500 GB total).
+              </p>
+              <p>
+                <a
+                  href="https://huggingface.co/datasets/nnuochen/crashtwin_data"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-success btn-lg"
+                >
+                  🤗 Download from Hugging Face
+                </a>
+              </p>
+
+              <h6 className="mt-4">Quick Start</h6>
+              <pre className="bg-light p-3 rounded"><code>{`# 1. Install Git LFS
+git lfs install
+
+# 2. Clone the dataset repository
+git clone https://huggingface.co/datasets/nnuochen/crashtwin_data
+cd crashtwin_data
+git lfs pull
+
+# 3. Restore the dataset
+mkdir -p crashtwin_data
+cat crashtwin_data.tar.part_*.zst | zstd -dc -T0 | tar -xvf - -C crashtwin_data`}</code></pre>
+
+              <h6 className="mt-3">Requirements</h6>
+              <ul>
+                <li><code>git-lfs</code></li>
+                <li><code>zstd</code></li>
+                <li><code>tar</code></li>
+                <li>Sufficient disk space (~500 GB)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
