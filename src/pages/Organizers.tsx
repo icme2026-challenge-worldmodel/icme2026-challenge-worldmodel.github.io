@@ -33,7 +33,7 @@ const Organizers: React.FC = () => {
     },
     {
       name: "Jiajun Deng",
-      role: "Associate Professor",
+      role: "Professor",
       affiliation: "University of Science and Technology of China",
       bio: "Dr. Jiajun Deng received his Ph.D. degree in 2021 from the University of Science and Technology of China. His research interests lie in multimodal understanding, spatial intelligence, and embodied AI. He has published over 50 high-quality papers in leading venues including IEEE TPAMI, NeurIPS, CVPR, ICCV, and ECCV.",
       email: "dengjj@ustc.edu.cn"
