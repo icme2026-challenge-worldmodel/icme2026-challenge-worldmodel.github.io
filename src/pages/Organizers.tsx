@@ -32,6 +32,7 @@ const Organizers: React.FC = () => {
       email: "yuz@hdu.edu.cn"
     },
     {
+      name: "Jiajun Deng",
       role: "Professor",
       affiliation: "University of Science and Technology of China",
       bio: "Dr. Jiajun Deng is a tenure-track Associate Professor at the University of Science and Technology of China. He received his B.Eng. degree in 2016 and his Ph.D. degree in 2021 from the same institution. His research interests lie in multimodal understanding, spatial intelligence, and embodied AI, with sustained contributions to 3D object detection, vision–language understanding, and multi-sensor fusion. He has published over 50 high-quality papers in leading venues, including IEEE TPAMI, NeurIPS, CVPR, ICCV, and ECCV. He was recognized in the 2024 and 2025 Stanford University & Elsevier list of the \"World's Top 2% Scientists,\" and was awarded the WAIC Yunfan Award \"Rising Star\" Runner-up. Dr. Deng has served as an Area Chair for ACM Multimedia 2024 and 2025, as well as ICASSP 2025 and 2026, and as a Guest Editor for IEEE Transactions on Multimedia. He has also organized multiple workshops at major international conferences, including ICCV and ACM Multimedia.",
