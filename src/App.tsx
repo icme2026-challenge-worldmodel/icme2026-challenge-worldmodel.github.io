@@ -6,6 +6,7 @@ import Data from './pages/Data';
 import Schedule from './pages/Schedule';
 import Submission from './pages/Submission';
 import Organizers from './pages/Organizers';
+import StudentOrganizers from './pages/StudentOrganizers';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                 <Nav.Link as={Link} to="/schedule">Schedule</Nav.Link>
                 <Nav.Link as={Link} to="/submission">Submission</Nav.Link>
                 <Nav.Link as={Link} to="/organizers">Organizers</Nav.Link>
+                <Nav.Link as={Link} to="/student-organizers">Student Organizers</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -36,6 +38,7 @@ function App() {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/submission" element={<Submission />} />
             <Route path="/organizers" element={<Organizers />} />
+            <Route path="/student-organizers" element={<StudentOrganizers />} />
           </Routes>
         </Container>
 
