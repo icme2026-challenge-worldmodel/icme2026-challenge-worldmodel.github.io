@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import bannerImg from '../assets/banner.jpg';
+import banner2Img from '../assets/banner2.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -13,8 +14,13 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="mb-4 text-center">
-        <img src={bannerImg} alt="ICME 2026 Grand Challenge" className="img-fluid rounded" style={{ maxHeight: '480px' }} />
+      <div className="row mb-4 g-3">
+        <div className="col-md-6">
+          <img src={bannerImg} alt="ICME 2026 Grand Challenge" className="img-fluid rounded w-100" />
+        </div>
+        <div className="col-md-6">
+          <img src={banner2Img} alt="ICME 2026 Grand Challenge" className="img-fluid rounded w-100" />
+        </div>
       </div>
 
       <div className="row">
