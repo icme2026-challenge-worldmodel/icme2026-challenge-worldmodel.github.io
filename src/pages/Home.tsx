@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import bannerImg from '../assets/banner.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -10,6 +11,10 @@ const Home: React.FC = () => {
           <p className="col-md-8 fs-4">ICME 2026 Grand Challenge</p>
           <Link className="btn btn-primary btn-lg" to="/submission" role="button">Register Now</Link>
         </div>
+      </div>
+
+      <div className="mb-4 text-center">
+        <img src={bannerImg} alt="ICME 2026 Grand Challenge" className="img-fluid rounded" style={{ maxHeight: '480px' }} />
       </div>
 
       <div className="row">
