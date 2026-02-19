@@ -40,26 +40,47 @@ const Organizers: React.FC = () => {
     }
   ];
 
+  const students = [
+    {
+      name: "Nuo Chen",
+      role: "Ph.D. Student",
+      affiliation: "Department of Electrical and Computer Engineering, Texas A&M University, USA",
+      bio: "Nuo Chen received the B.Eng. degree in Software Engineering from Chongqing University and the M.Sc. degree in Computer Engineering from New York University. He is currently a Ph.D. student with the Department of Electrical and Computer Engineering, Texas A&M University, advised by Prof. Zhiwen Fan. His research interests include 3D generative models and 3D vision-language models. He has published papers in leading conferences, including CVPR, IROS, and ACM Multimedia. Additionally, he has served as a reviewer for premier venues such as ICML, NeurIPS, ICLR, AAAI, and ACM Multimedia.",
+      email: "nuochen@tamu.edu"
+    },
+    {
+      name: "Qianke Meng",
+      role: "Master's Student",
+      affiliation: "School of Computer Science and Technology, Hangzhou Dianzi University, China",
+      bio: "Qianke Meng received the B.Eng. degree in Computer Science and Technology from Henan University in 2024. He is currently a Master's student with the School of Computer Science and Technology, Hangzhou Dianzi University, China. His research interests include multimodal large models, agents, and video question answering, with an emphasis on vision-language generative intelligence. He has published a paper on agentic reasoning with hierarchical memory for long-form video understanding, and received the National First Prize in the China Graduate Mathematical Modeling Contest.",
+      email: "mengqianke1@gmail.com"
+    }
+  ];
+
+  const renderCards = (list: typeof organizers) => (
+    <Row>
+      {list.map((p, i) => (
+        <Col xs={12} lg={6} className="mb-4" key={i}>
+          <Card className="h-100">
+            <Card.Header as="h5">{p.name}</Card.Header>
+            <Card.Body>
+              <Card.Title>{p.role}</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">{p.affiliation}</Card.Subtitle>
+              <Card.Text>{p.bio}</Card.Text>
+              <Card.Link href={`mailto:${p.email}`}>Contact: {p.email}</Card.Link>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+  );
+
   return (
     <div>
       <h2 className="mb-4">Organizers</h2>
-      <Row>
-        {organizers.map((org, index) => (
-          <Col xs={12} lg={6} className="mb-4" key={index}>
-            <Card className="h-100">
-              <Card.Header as="h5">{org.name}</Card.Header>
-              <Card.Body>
-                <Card.Title>{org.role}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{org.affiliation}</Card.Subtitle>
-                <Card.Text>
-                  {org.bio}
-                </Card.Text>
-                <Card.Link href={`mailto:${org.email}`}>Contact: {org.email}</Card.Link>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+      {renderCards(organizers)}
+      <h2 className="mb-4 mt-5">Student Organizers</h2>
+      {renderCards(students)}
     </div>
   );
 };
